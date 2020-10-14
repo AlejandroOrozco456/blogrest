@@ -59,7 +59,6 @@ switch($_SERVER['REQUEST_METHOD']){
         }
         header("HTTP/1.1 200 OK");
         echo json_encode($res);
-        
     break;
     case "PUT":
         if(isset($_GET['user']) && isset($_GET['pass'])&& isset($_GET['tipo'])&& isset($_GET['nombre'])){
